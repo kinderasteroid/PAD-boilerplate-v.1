@@ -34,11 +34,21 @@ docker exec -it workshop_web_container sh
 ```
   docker exec -it psql-db sh
 ```
+### settings.py modification
+```
 
+DATABASES = {
+      'default': {
+          'ENGINE': 'django.db.backends.postgresql',
+          'NAME': 'cases_db',
+          'USER': 'postgres',
+          'PASSWORD': '123456',
+          'HOST': 'psql-db',
+          'PORT': 5432,
+      }
+  }
+```
 ## Contributing
 
 Contributions are welcome! Feel free to submit pull requests or open issues for any improvements or features you'd like to see added to this boilerplate.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
