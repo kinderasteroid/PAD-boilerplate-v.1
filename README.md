@@ -20,7 +20,20 @@ This boilerplate is designed to streamline the development process for web appli
 
 To get started, simply clone this repository and follow the setup instructions in the README file.
 
+1. Clone this repository
+2. In root Directory
+ ```
+ docker-compose up -d
+```
+### Necessary Commands
 
+```
+docker exec -it workshop_web_container sh
+```
+
+```
+  docker exec -it psql-db sh
+```
 
 ## Contributing
 
